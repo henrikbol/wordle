@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Wørdle</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="icon" href="static/favicon.ico" sizes="any">
+    <link rel="apple-touch-icon" href="static/apple-touch-icon.png">
+</head>
+
+<body>
+    <h3>Wørdle</h3>
+    <form method="post">
+        <input type="text" name="letters" value="{{ letters }}" />
+        <input type="submit" value="Find ord">
+    </form>
+    <p>Mulige ord der passer med <b>{{ letters }}</b>:</p>
+    <p>{{ result }}</p>
+    <p>Mulige netto gæt:</p>
+    <p>{{ result2 }}</p>
+</body>
+
+</html>
