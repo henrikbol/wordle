@@ -7,9 +7,7 @@ De danske ord er taget fra retskrivningsordbogens online version på https://rop
 
 ## Prepare for Digital Ocean
 
-docker buildx build  --platform linux/amd64 --tag wordledk .
-docker tag wordledk registry.digitalocean.com/<repo>/wordledk
-docker push registry.digitalocean.com/<repo>/wordledk
+docker tag wordledk registry.digitalocean.com/uggiuggi/wordledk ; docker push registry.digitalocean.com/uggiuggi/wordledk
 
 ## Run command
 uvicorn app:app --host 0.0.0.0 --port 8080

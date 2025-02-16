@@ -1,4 +1,4 @@
-FROM python:3.9-slim-buster
+FROM python:3.12-slim
 
 RUN /usr/local/bin/python -m pip install --upgrade pip
 
